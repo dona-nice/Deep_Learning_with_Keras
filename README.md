@@ -1,9 +1,9 @@
 ## [Thesis Project: Intrusion Detection via Feedforward Deep Neural Networks]
 ## 1. Abstract / Research Summary
 This repository contains the implementation and experimental framework for my Master’s thesis. The research focused on the efficacy of Deep Feedforward Architectures in classifying multi-class network intrusions.
-The Problem: Traditional machine learning models (SVM, Random Forest) often struggle with high-dimensional feature spaces and non-linear relationships in modern network traffic.
-The Solution: Developed a multi-layered DNN optimized with dropout regularization and Adam optimization to detect sophisticated attack patterns.
-The Result: Achieved an accuracy of [X]% on the [e.g., NSL-KDD / CIC-IDS2017] dataset, specifically outperforming baseline models in detecting "User to Root" (U2R) and "Remote to Local" (R2L) attacks.
+##The Problem:## Traditional machine learning models (SVM, Random Forest) often struggle with high-dimensional feature spaces and non-linear relationships in modern network traffic.
+##The Solution:## Developed a multi-layered DNN optimized with dropout regularization and Adam optimization to detect sophisticated attack patterns.
+##The Result:## Achieved an accuracy of [X]% on the [e.g., NSL-KDD / CIC-IDS2017] dataset, specifically outperforming baseline models in detecting "User to Root" (U2R) and "Remote to Local" (R2L) attacks.
 
 ## 2. Methodology & Mathematical Framework
 The model utilizes a deep architecture where each hidden layer $h_i$ applies a non-linear transformation:
