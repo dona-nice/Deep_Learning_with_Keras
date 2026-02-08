@@ -2,7 +2,7 @@
 ### 1. Abstract / Research Summary
 This repository contains the implementation and experimental framework for my Master’s thesis. The research focused on the efficacy of Deep Feedforward Architectures in classifying multi-class network intrusions.
 
-**'-The Problem:** Traditional machine learning models (SVM, Random Forest) often struggle with high-dimensional feature spaces and non-linear relationships in modern network traffic.
+'-**The Problem:** Traditional machine learning models (SVM, Random Forest) often struggle with high-dimensional feature spaces and non-linear relationships in modern network traffic.
 
 **The Solution:** Developed a multi-layered DNN optimized with dropout regularization and Adam optimization to detect sophisticated attack patterns.
 
