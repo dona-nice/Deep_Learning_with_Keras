@@ -13,13 +13,13 @@ The model utilizes a deep architecture where each hidden layer $h_i$ applies a n
 
 $$h_i = \sigma(W_i h_{i-1} + b_i)$$
 
-*Activation Function:* ReLU was utilized for hidden layers to mitigate the vanishing gradient problem, while Softmax was used for the output layer to provide class probabilities.
+**Activation Function:** ReLU was utilized for hidden layers to mitigate the vanishing gradient problem, while Softmax was used for the output layer to provide class probabilities.
 
-*Loss Function:* Categorical Cross-Entropy was employed for multi-class classification:
+**Loss Function:** Categorical Cross-Entropy was employed for multi-class classification:
 
 $$J(\theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(\hat{y}_{ij})$$
 
-*Optimization:* Hyperparameter tuning was performed on learning rates, batch sizes, and hidden layer depth to minimize the loss $J(\theta)$.
+**Optimization:** Hyperparameter tuning was performed on learning rates, batch sizes, and hidden layer depth to minimize the loss $J(\theta)$.
 
 ### Results Analysis and Discussion 
 In this thesis, the researcher has conducted a comparative study of the machine learning approaches for intrusion detection using conventional machine learning algorithms and feedforward deep neural networks (FFDNN). My main idea was to develop an FFDNN as a 
