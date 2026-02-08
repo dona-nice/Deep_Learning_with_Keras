@@ -1,8 +1,11 @@
 ## [Thesis Project: Intrusion Detection via Feedforward Deep Neural Networks]
 ## 1. Abstract / Research Summary
 This repository contains the implementation and experimental framework for my Master’s thesis. The research focused on the efficacy of Deep Feedforward Architectures in classifying multi-class network intrusions.
+
 **The Problem:** Traditional machine learning models (SVM, Random Forest) often struggle with high-dimensional feature spaces and non-linear relationships in modern network traffic.
+
 **The Solution:** Developed a multi-layered DNN optimized with dropout regularization and Adam optimization to detect sophisticated attack patterns.
+
 **The Result:** Achieved an accuracy of [X]% on the [e.g., NSL-KDD / CIC-IDS2017] dataset, specifically outperforming baseline models in detecting "User to Root" (U2R) and "Remote to Local" (R2L) attacks.
 
 ## 2. Methodology & Mathematical Framework
@@ -10,13 +13,13 @@ The model utilizes a deep architecture where each hidden layer $h_i$ applies a n
 
 $$h_i = \sigma(W_i h_{i-1} + b_i)$$
 
-Activation Function: ReLU was utilized for hidden layers to mitigate the vanishing gradient problem, while Softmax was used for the output layer to provide class probabilities.
+*Activation Function:* ReLU was utilized for hidden layers to mitigate the vanishing gradient problem, while Softmax was used for the output layer to provide class probabilities.
 
-Loss Function: Categorical Cross-Entropy was employed for multi-class classification:
+*Loss Function:* Categorical Cross-Entropy was employed for multi-class classification:
 
 $$J(\theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(\hat{y}_{ij})$$
 
-Optimization: Hyperparameter tuning was performed on learning rates, batch sizes, and hidden layer depth to minimize the loss $J(\theta)$.
+*Optimization:* Hyperparameter tuning was performed on learning rates, batch sizes, and hidden layer depth to minimize the loss $J(\theta)$.
 
 ### Results Analysis and Discussion 
 In this thesis, the researcher has conducted a comparative study of the machine learning approaches for intrusion detection using conventional machine learning algorithms and feedforward deep neural networks (FFDNN). My main idea was to develop an FFDNN as a 
