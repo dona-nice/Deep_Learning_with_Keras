@@ -13,9 +13,9 @@ The model utilizes a deep architecture where each hidden layer $h_i$ applies a n
 
 $$h_i = \sigma(W_i h_{i-1} + b_i)$$
 
-**Activation Function:** ReLU was utilized for hidden layers to mitigate the vanishing gradient problem, while Softmax was used for the output layer to provide class probabilities.
++ **Activation Function:** ReLU was utilized for hidden layers to mitigate the vanishing gradient problem, while Softmax was used for the output layer to provide class probabilities.
 
-**Loss Function:** Categorical Cross-Entropy was employed for multi-class classification:
++ **Loss Function:** Categorical Cross-Entropy was employed for multi-class classification:
 
 $$J(\theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(\hat{y}_{ij})$$
 
