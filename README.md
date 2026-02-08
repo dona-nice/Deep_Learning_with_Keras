@@ -9,7 +9,7 @@ This repository contains the implementation and experimental framework for my Ma
 **The Result:** Achieved an accuracy of [X]% on the [e.g., NSL-KDD / CIC-IDS2017] dataset, specifically outperforming baseline models in detecting "User to Root" (U2R) and "Remote to Local" (R2L) attacks.
 
 ### 2. Methodology & Mathematical Framework
-(+) The model utilizes a deep architecture where each hidden layer $h_i$ applies a non-linear transformation:
++ The model utilizes a deep architecture where each hidden layer $h_i$ applies a non-linear transformation:
 
 $$h_i = \sigma(W_i h_{i-1} + b_i)$$
 
