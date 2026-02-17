@@ -21,6 +21,38 @@ $$J(\theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(\hat{y}_{ij
 
 **Optimization:** Hyperparameter tuning was performed on learning rates, batch sizes, and hidden layer depth to minimize the loss $J(\theta)$.
 
+### Enhancing Cybersecurity with Deep Learning: A Novel Network Intrusion Detection System
+
+### Introduction
+
+The growth of internet use has revolutionized communication, leading to vast data transmission across computer networks. However, this digital evolution has escalated security threats, with malicious intrusions now a common hazard to sensitive data. Cybersecurity measures like Intrusion Detection Systems (IDSs) play a critical role in safeguarding networks. Traditional IDSs, such as signature-based systems like Snort, detect known threats but often fail to recognize new, evolving attacks. This limitation has driven research toward deep learning, a branch of machine learning (ML) that is particularly promising for handling complex, large-scale data. This article explores the potential of a deep learning-based IDS that addresses these challenges, drawing on the research by Donatus Ifeanyichukwu Edeh, whose thesis at the University of Turku demonstrated the superiority of a Feedforward Deep Neural Network (FFDNN) for intrusion detection.
+
+### Challenges of Existing Intrusion Detection Systems
+
+Signature-based IDSs primarily rely on predefined rules and are adept at recognizing known attack patterns. However, as attackers continuously develop new threats, these IDSs struggle to keep up. Anomaly-based IDSs that utilize ML approaches aim to identify unusual network behavior indicative of potential threats. While more adaptable, these systems face limitations when handling massive datasets, as they often require substantial computational resources and incur longer runtimes.
+
+### Deep Learning: A Solution for Enhanced Detection
+
+Edeh’s research proposed an FFDNN model for intrusion detection, specifically designed to overcome the limitations of both signature-based and conventional ML IDSs. By applying deep learning, the IDS leverages large datasets and learns complex patterns to identify novel threats more accurately. His study used the NSL-KDD dataset, a widely utilized dataset for intrusion detection benchmarking, allowing for rigorous testing of the model's effectiveness.
+
+### Model Architecture and Training
+
+The FFDNN model was developed using Google’s Colaboratory software, combining the Keras API with TensorFlow. Three FFDNN variants were tested, each with a network architecture that included two hidden layers. Different configurations of neurons were applied: 64 and 32 neurons; 32 and 16 neurons; and 512 and 256 neurons. The ReLU activation function was used for hidden layers, while a sigmoid activation function, suitable for binary classification, was utilized in the output layer. Training optimization was achieved with the Adam optimizer and a 0.2 dropout rate to prevent overfitting. The FFDNN variants were trained over 16, 20, and 20 epochs with batch sizes of 256, 64, and 128, respectively.
+
+### Results: Comparing Deep Learning with Conventional Algorithms
+
+The performance of the FFDNN models was impressive, achieving test accuracies of 89%, 84%, and 87%, surpassing the results obtained with traditional ML models like Random Forest, K-nearest neighbor, Logistic Regression, Decision Tree, and Naïve Bayes, which achieved accuracy scores between 76% and 81%. Metrics such as False Positive Rate (FPR), False Alarm Rate (FAR), F1 Score, and Precision further confirmed the superior performance of the deep learning models.
+
+### Why FFDNNs Outperform Traditional ML in Intrusion Detection
+
+FFDNNs provide an architectural advantage with their dense layers, allowing them to scale effectively with large datasets. This scalability enables faster computation, a critical factor when handling extensive network traffic data. The deep neural network's ability to manage runtime efficiently while achieving high accuracy demonstrates its suitability for real-time intrusion detection in cybersecurity applications.
+
+### Conclusion
+
+Edeh’s research emphasizes the potential of deep learning to advance cybersecurity. For organizations handling large-scale networks, FFDNN-based IDSs offer a promising solution for timely and accurate threat detection, outperforming conventional methods in both speed and accuracy. As cyber threats evolve, deep learning continues to offer innovative pathways for enhancing network security, making it a critical component in the future of digital protection.
+
+**Keywords:**  Cybersecurity, Deep learning, Intrusion Detection System, Machine learning, Computer networks
+
 ### Results Analysis and Discussion 
 In this thesis, the researcher has conducted a comparative study of the machine learning approaches for intrusion detection using conventional machine learning algorithms and feedforward deep neural networks (FFDNN). My main idea was to develop an FFDNN as a 
 classifier to classify network traffic intrusions in the NSL-KDD dataset as normal or attack while using the conventional machine learning approaches as my controlled experiment. The analysis was performed on five different ML algorithms (DT, LR, RF, NB, KNN) and their performances on the test data gave 81%, 76%, 77%, 77%, 77% respectively. 
