@@ -47,12 +47,6 @@ The performance of the FFDNN models was impressive, achieving test accuracies of
 
 FFDNNs provide an architectural advantage with their dense layers, allowing them to scale effectively with large datasets. This scalability enables faster computation, a critical factor when handling extensive network traffic data. The deep neural network's ability to manage runtime efficiently while achieving high accuracy demonstrates its suitability for real-time intrusion detection in cybersecurity applications.
 
-### Conclusion
-
-Edeh’s research emphasizes the potential of deep learning to advance cybersecurity. For organizations handling large-scale networks, FFDNN-based IDSs offer a promising solution for timely and accurate threat detection, outperforming conventional methods in both speed and accuracy. As cyber threats evolve, deep learning continues to offer innovative pathways for enhancing network security, making it a critical component in the future of digital protection.
-
-**Keywords:**  Cybersecurity, Deep learning, Intrusion Detection System, Machine learning, Computer networks
-
 ### Results Analysis and Discussion 
 In this thesis, the researcher has conducted a comparative study of the machine learning approaches for intrusion detection using conventional machine learning algorithms and feedforward deep neural networks (FFDNN). My main idea was to develop an FFDNN as a 
 classifier to classify network traffic intrusions in the NSL-KDD dataset as normal or attack while using the conventional machine learning approaches as my controlled experiment. The analysis was performed on five different ML algorithms (DT, LR, RF, NB, KNN) and their performances on the test data gave 81%, 76%, 77%, 77%, 77% respectively. 
@@ -74,4 +68,10 @@ Considering overall performances of all models, the FFDNN-1 performed best with 
 Another important metric that shows that the FFDNNs performed well is their high ROC area under the curve (AUC), FFDNN-1, FFDDN-2, and FFDNN-3 in Table 16 all had values of 95%, 86%, and 92% in that order. The higher the AUC value, the more optimal the model becomes (note that 100% indicates a perfect model). Also, it is good to know that the primary aim is to develop machine learning models that would maintain an acceptable true positive rate (TPR) or detection rate (DR) with low false alarm rate (FAR) or false positive rate (FPR), looking at Table 13 and Table 16, you could see that DT, RF, and NB had very low FAR of 5%, 3% and 2% respective compared to FFDNNs 11%, 16%, and 13%. This is good even though their detection rates were not as high as the FFDNNs, however, there could still be an improvement in ensuring that the FFDNNs produce low FAR since they are scalable in terms of architecture, but this would involve more computational cost. 
 
 I would like to point out that any variant of the feedforward deep neural network (FFDNN-1, FFDNN-2, and FFDNN-3) has the capability as a classifier to classify network traffic intrusions with a high detection rate while offering a reduced FAR, it only depends on the model design, hyperparameters, and architecture. Limitations in the ML approach for intrusion detection are high FAR, and how to strike a balance between false positive and false negative in terms of intrusion detection policies or profiling. I believe this limitation can be solved by the development of a deeper neural network or the use of another variant of a deep neural network like the convolutional deep neural network (CNN). 
+
+### Conclusion
+
+Edeh’s research emphasizes the potential of deep learning to advance cybersecurity. For organizations handling large-scale networks, FFDNN-based IDSs offer a promising solution for timely and accurate threat detection, outperforming conventional methods in both speed and accuracy. As cyber threats evolve, deep learning continues to offer innovative pathways for enhancing network security, making it a critical component in the future of digital protection.
+
+**Keywords:**  Cybersecurity, Deep learning, Intrusion Detection System, Machine learning, Computer networks
 
