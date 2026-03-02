@@ -4,18 +4,18 @@ This repository contains the implementation and experimental framework for my Ma
 
 + **The Problem:** Traditional machine learning models (SVM, Random Forest) often struggle with high-dimensional feature spaces and non-linear relationships in modern network traffic.
 
-+ **The Solution:** Developed a multi-layered DNN optimized with dropout regularization and Adam optimization to detect sophisticated attack patterns.
++ **The Solution:** Developed a Feedforward Deep Neural network optimized with dropout regularization and Adam optimization to detect attack patterns.
 
-+ **The Result:** Achieved an accuracy of [X]% on the [e.g., NSL-KDD / CIC-IDS2017] dataset, specifically outperforming baseline models in detecting "User to Root" (U2R) and "Remote to Local" (R2L) attacks.
++ **The Result:** Achieved an accuracy of 89% on the NSL-KDD dataset, specifically outperforming baseline models in binary classification of traffic intrusion as normal or attack.
 
 ### 2. Methodology & Mathematical Framework
 The model utilizes a deep architecture where each hidden layer $h_i$ applies a non-linear transformation:
 
 $$h_i = \sigma(W_i h_{i-1} + b_i)$$
 
-+ **Activation Function:** ReLU was utilized for hidden layers to mitigate the vanishing gradient problem, while Softmax was used for the output layer to provide class probabilities.
++ **Activation Function:** ReLU was utilized for hidden layers to mitigate the vanishing gradient problem, while Sigmoid was used for the output layer to provide class probabilities.
 
-+ **Loss Function:** Categorical Cross-Entropy was employed for multi-class classification:
++ **Loss Function:** Binary Cross-Entropy was employed for binary classification:
 
 $$J(\theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(\hat{y}_{ij})$$
 
